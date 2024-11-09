@@ -139,6 +139,18 @@ export const projects: Project[] = [
     link: "https://github.com/pro0-0/TULSI_",
   },
   {
+    title: "Multi-App",
+    description:
+      "A multi-purpose web platform that includes a calculator, expense tracker, and Pomodoro timer to enhance productivity , Manage finances effectively and much more",
+    link: "https://github.com/iamshivam0/My-app",
+  },
+  {
+    title: "Smart Grid Optimization",
+    description:
+      "Integrating Renewable Energy for Sustainable Power Systems. Built predictive models to accurately forecast power generation and assess grid stability.",
+    link: "https://github.com/iamshivam0/web_ui_hackwave_frontend",
+  },
+  {
     title: "Your Academic Helper",
     description:
       "A web platform for academic support, including doubt resolution, group study scheduling, and resource sharing within college.",
