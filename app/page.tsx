@@ -6,6 +6,7 @@ import Sidebar from "@/components/sidebar";
 import SkillOutline from "@/components/skill-outline";
 import { Separator } from "@/components/ui/separator";
 import WorkShowcase from "@/components/work-showcase";
+import FloatingResumeButton from "@/components/floating-resume-button";
 
 import {
   Project,
@@ -19,9 +20,10 @@ import {
 
 export default function Home() {
   return (
-    <div className="md:max-w-5xl mx-auto md:mt-8 ">
+    <div className="md:max-w-5xl mx-auto md:mt-8">
       <Navbar />
-      <div className="flex flex-col md:flex-row my-10 mx-10 md:mx-0 space-x-0 md:space-x-10 space-y-10 md:space-y-0 ">
+      <FloatingResumeButton />
+      <div className="flex flex-col md:flex-row my-10 mx-10 md:mx-0 space-x-0 md:space-x-10 space-y-10 md:space-y-0">
         <Sidebar />
         <div className="md:min-w-[65vh] min-w-full space-y-10">
           {/* Hero */}
