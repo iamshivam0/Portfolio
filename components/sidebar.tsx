@@ -30,16 +30,13 @@ export default function Sidebar() {
     const eyeCenterX = eyeRect.left + eyeRect.width / 2;
     const eyeCenterY = eyeRect.top + eyeRect.height / 2;
 
-    // Calculate the distance between mouse and eye center
     const deltaX = mousePosition.x - eyeCenterX;
     const deltaY = mousePosition.y - eyeCenterY;
 
-    // Calculate the distance ratio
     const distance = Math.sqrt(deltaX * deltaX + deltaY * deltaY);
-    const maxDistance = 100; // Maximum pixel distance for full eye movement
+    const maxDistance = 100;
     const ratio = Math.min(distance / maxDistance, 1);
 
-    // Calculate maximum movement (3px in any direction)
     const maxMove = 3;
     const moveX = (deltaX / distance) * maxMove * ratio;
     const moveY = (deltaY / distance) * maxMove * ratio;
@@ -53,18 +50,16 @@ export default function Sidebar() {
   return (
     <div className="flex flex-col gap-4">
       <div className="rounded-xl border bg-card text-card-foreground shadow flex flex-col space-y-2 p-4 h-fit static md:sticky top-24">
-        {/* Title/Name */}
         <p className="font-semibold leading-none tracking-tight">
           {aboutYou.name}
         </p>
-        {/* Description with hover effect container */}
         <div className="group relative">
           <p className="text-sm text-muted-foreground tracking-tight">
             {aboutYou.description}
           </p>
           <p className="text-sm text-muted-foreground tracking-tight mt-2 overflow-hidden max-h-0 group-hover:max-h-20 transition-all duration-500 ease-in-out italic">
-            "Crafting digital experiences with code, turning ideas into
-            interactive realities, one line at a time."
+            &ldquo;Crafting digital experiences with code, turning ideas into
+            interactive realities, one line at a time.&rdquo;
           </p>
         </div>
       </div>
