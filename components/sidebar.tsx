@@ -57,13 +57,19 @@ export default function Sidebar() {
         <p className="font-semibold leading-none tracking-tight">
           {aboutYou.name}
         </p>
-        {/* Description */}
-        <p className="text-sm text-muted-foreground tracking-tight">
-          {aboutYou.description}
-        </p>
+        {/* Description with hover effect container */}
+        <div className="group relative">
+          <p className="text-sm text-muted-foreground tracking-tight">
+            {aboutYou.description}
+          </p>
+          <p className="text-sm text-muted-foreground tracking-tight mt-2 overflow-hidden max-h-0 group-hover:max-h-20 transition-all duration-500 ease-in-out italic">
+            "Crafting digital experiences with code, turning ideas into
+            interactive realities, one line at a time."
+          </p>
+        </div>
       </div>
 
-      <div className="rounded-xl border bg-card text-card-foreground shadow flex flex-col items-center justify-center p-8 h-32 relative static md:sticky top-64">
+      <div className="rounded-xl border bg-card text-card-foreground shadow flex flex-col items-center justify-center p-8 h-32  static md:sticky top-64">
         <div className="flex gap-8">
           <div className="eye-container w-12 h-12 rounded-full bg-white border-2 border-gray-300 flex items-center justify-center overflow-hidden">
             <div

@@ -7,6 +7,7 @@ import SkillOutline from "@/components/skill-outline";
 import { Separator } from "@/components/ui/separator";
 import WorkShowcase from "@/components/work-showcase";
 import FloatingResumeButton from "@/components/floating-resume-button";
+import EducationShowcase from "@/components/education-showcase";
 
 import {
   Project,
@@ -16,6 +17,8 @@ import {
   projects,
   skills,
   workExperiences,
+  Education,
+  educationDetails,
 } from "@/lib/data";
 
 export default function Home() {
@@ -90,6 +93,21 @@ export default function Home() {
                     />
                   )
                 )}
+              </div>
+            </div>
+          </section>
+          {/* Education */}
+          <section id="education" key="education">
+            <h2 className="text-2xl font-semibold tracking-tight">Education</h2>
+            <div className="mt-5 rounded-xl border bg-card text-card-foreground shadow">
+              <div className="p-6 space-y-6">
+                {educationDetails.map((education: Education, index: number) => (
+                  <EducationShowcase
+                    key={education.institution}
+                    education={education}
+                    whetherlast={educationDetails.length == index + 1}
+                  />
+                ))}
               </div>
             </div>
           </section>

@@ -119,11 +119,12 @@ export const skills = [
   },
 ];
 
-export interface Project {
+export type Project = {
   title: string;
   description: string;
   link: string;
-}
+  image?: string; // Optional image URL for the project
+};
 
 export const projects: Project[] = [
   {
@@ -131,18 +132,21 @@ export const projects: Project[] = [
     description:
       "A full-stack web application for streamlining internship and seminar data submission and review with a user-friendly portal and role-based access.",
     link: "https://github.com/seminar-internship-portal/sip-frontend",
+    image: "/Seminar.png",
   },
   {
     title: "Tulsi Industries Website",
     description:
       "Business website with modern design elements and responsive navigation to strengthen the company’s online presence.",
     link: "https://github.com/pro0-0/TULSI_",
+    image: "/Tulsi.png",
   },
   {
     title: "Multi-App",
     description:
       "A multi-purpose web platform that includes a calculator, expense tracker, and Pomodoro timer to enhance productivity , Manage finances effectively and much more",
     link: "https://github.com/iamshivam0/My-app",
+    image: "/Multiaap.jpg",
   },
   {
     title: "Smart Grid Optimization",
@@ -177,20 +181,11 @@ export const workExperiences: WorkExperience[] = [
   },
   {
     company: "Pune Institute of Computer Technology",
-    logo: "/nextjs.png",
+    logo: "/Pict.png",
     position: "Web developer",
     description:
       "Create a seminar Internship portal for the students to submit their seminars and internships and review them.",
     years: "Jan, 2023 - March, 2024",
-  },
-
-  {
-    company: "Pune Institute of Computer Technology",
-    logo: "/techm.jepg",
-    position: "Student",
-    description:
-      "Bachelor's in Computer Science, focused on full-stack development.",
-    years: "2021 - 2025",
   },
 ];
 
@@ -216,3 +211,36 @@ export const websiteMetadata = {
   title: "Shivam | Front-End Developer",
   description: "👋 Hey, Shivam here. Welcome to my portfolio and blog.",
 };
+
+export type Education = {
+  institution: string;
+  degree: string;
+  fieldOfStudy: string;
+  years: string;
+  Marks: string;
+};
+
+export const educationDetails: Education[] = [
+  {
+    institution: "Pune Institute of Computer Technology",
+    degree: "Bachelor of Technology",
+    fieldOfStudy: "Information Technology",
+    years: "2021 - 2025",
+    Marks: "8.6",
+  },
+  {
+    institution: "SpringDale Jr College",
+    degree: "HSC",
+    fieldOfStudy: "Science",
+    years: "2019 - 2021",
+    Marks: " 93%",
+  },
+  {
+    institution: "TCH",
+    degree: "SSC",
+    fieldOfStudy: "",
+    years: "2015 - 2019",
+    Marks: "90.2%",
+  },
+  // Add more education entries as needed
+];
