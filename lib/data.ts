@@ -128,34 +128,34 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    title: "Seminar-Internship Portal",
+    title: "Seminar-Internship Portal (MERN)",
     description:
       "A full-stack web application for streamlining internship and seminar data submission and review with a user-friendly portal and role-based access.",
     link: "https://github.com/seminar-internship-portal/sip-frontend",
     image: "/Seminar.png",
   },
   {
-    title: "Tulsi Industries Website",
+    title: "Tulsi Industries Website (Next.js)",
     description:
       "Business website with modern design elements and responsive navigation to strengthen the company’s online presence.",
     link: "https://github.com/pro0-0/TULSI_",
     image: "/Tulsi.png",
   },
   {
-    title: "Multi-App",
+    title: "Multi-App (React-Native)",
     description:
-      "A multi-purpose web platform that includes a calculator, expense tracker, and Pomodoro timer to enhance productivity , Manage finances effectively and much more",
+      "A multi-purpose Andriod App that includes a calculator, expense tracker, and Pomodoro timer to enhance productivity , Manage finances effectively and much more",
     link: "https://github.com/iamshivam0/My-app",
-    image: "/Multiaap.jpg",
+    image: "/Multiaap-squared.png",
   },
   {
-    title: "Smart Grid Optimization",
+    title: "Smart Grid Optimization (MERN - ML)",
     description:
       "Integrating Renewable Energy for Sustainable Power Systems. Built predictive models to accurately forecast power generation and assess grid stability.",
     link: "https://github.com/iamshivam0/web_ui_hackwave_frontend",
   },
   {
-    title: "Your Academic Helper",
+    title: "Your Academic Helper ",
     description:
       "A web platform for academic support, including doubt resolution, group study scheduling, and resource sharing within college.",
     link: "https://github.com/iamshivam0/Your-Academic-Helper",
